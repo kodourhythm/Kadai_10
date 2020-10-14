@@ -16,6 +16,7 @@
 		695423C0253066DB00B28B61 /* Kadai_10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695423BF253066DB00B28B61 /* Kadai_10Tests.swift */; };
 		695423CB253066DB00B28B61 /* Kadai_10UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695423CA253066DB00B28B61 /* Kadai_10UITests.swift */; };
 		695423DC25326FF700B28B61 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695423DB25326FF700B28B61 /* TableViewController.swift */; };
+		695424282536963700B28B61 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695424272536963700B28B61 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		695423CA253066DB00B28B61 /* Kadai_10UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai_10UITests.swift; sourceTree = "<group>"; };
 		695423CC253066DB00B28B61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		695423DB25326FF700B28B61 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		695424272536963700B28B61 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				695423AA253066D800B28B61 /* SceneDelegate.swift */,
 				695423AC253066D800B28B61 /* ViewController.swift */,
 				695423DB25326FF700B28B61 /* TableViewController.swift */,
+				695424272536963700B28B61 /* TableViewCell.swift */,
 				695423AE253066D800B28B61 /* Main.storyboard */,
 				695423B1253066DB00B28B61 /* Assets.xcassets */,
 				695423B3253066DB00B28B61 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695424282536963700B28B61 /* TableViewCell.swift in Sources */,
 				695423AD253066D800B28B61 /* ViewController.swift in Sources */,
 				695423A9253066D800B28B61 /* AppDelegate.swift in Sources */,
 				695423AB253066D800B28B61 /* SceneDelegate.swift in Sources */,

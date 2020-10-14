@@ -11,52 +11,24 @@ class TableViewController: UITableViewController {
 
     private let prefecture = ["北海道","青森県","岩手県","宮城県","秋田県","山形県","福島県","茨城県","栃木県","群馬県","埼玉県","千葉県","東京都","神奈川県","新潟県","富山県","石川県","福井県","山梨県","長野県","岐阜県","静岡県","愛知県","三重県","滋賀県","京都府","大阪府","兵庫県","奈良県","和歌山県","鳥取県","島根県","岡山県","広島県","山口県","徳島県","香川県","愛媛県","高知県","福岡県","佐賀県","長崎県","熊本県","大分県","宮崎県","鹿児島県","沖縄県"]
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 47
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-        // 3で割った余りでセルの色を決定
-        var identifier = ""
-        switch indexPath.row % 3 {
-        case 0:
-            identifier = "Cell1"
-        case 1:
-            identifier = "Cell2"
-        case 2:
-            identifier = "Cell3"
-        default:
-            identifier = ""
-        }
             
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifier)! as UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1")! as! TableViewCell
         
         // 都道府県名
-        let prefectureLabel = cell.viewWithTag(1) as! UILabel
-        prefectureLabel.text = prefecture[indexPath.row]
+        cell.prefectureLabel.text = prefecture[indexPath.row]
         
         // 何番目
-        let numberLabel = cell.viewWithTag(2) as! UILabel
-        numberLabel.text = String(indexPath.row + 1) + "番目の都道府県です"
+        cell.numberLabel.text = String(indexPath.row + 1) + "番目の都道府県です"
+        
+        // 色
+        let colors: [UIColor] = [.red, .green, .blue]
+        cell.backgroundColor = colors[indexPath.row % 3]
         
         return cell
     }
